@@ -92,5 +92,44 @@ body {
         }
       }
     }
+    section.resume {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+
+      section.table {
+        flex: 5 1 500px;
+        padding: 2rem;
+        table {
+          border-collapse: collapse;
+          tr {
+            border-bottom: 2px solid gray;
+            transition: all 0.2s ease;
+            &:hover {
+              background-color: rgb(230, 192, 253);
+            }
+            td {
+              padding: 1rem;
+            }
+          }
+        }
+      }
+
+      section.picture {
+        flex: 1 1 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          height: 80%;
+        }
+
+        div.greenRect1 {
+          width: 30vw;
+          height: 90vh;
+          border: 10px solid rgb(230, 192, 253);
+        }
+      }
+    }
   }
 }

@@ -84,4 +84,40 @@ body main section.about-me section.description h2 {
 }
 body main section.about-me section.description .progress-bar-area p {
   margin-top: 1rem;
+}
+body main section.resume {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+body main section.resume section.table {
+  flex: 5 1 500px;
+  padding: 2rem;
+}
+body main section.resume section.table table {
+  border-collapse: collapse;
+}
+body main section.resume section.table table tr {
+  border-bottom: 2px solid gray;
+  transition: all 0.2s ease;
+}
+body main section.resume section.table table tr:hover {
+  background-color: rgb(230, 192, 253);
+}
+body main section.resume section.table table tr td {
+  padding: 1rem;
+}
+body main section.resume section.picture {
+  flex: 1 1 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main section.resume section.picture img {
+  height: 80%;
+}
+body main section.resume section.picture div.greenRect1 {
+  width: 30vw;
+  height: 90vh;
+  border: 10px solid rgb(230, 192, 253);
 }/*# sourceMappingURL=style.css.map */
