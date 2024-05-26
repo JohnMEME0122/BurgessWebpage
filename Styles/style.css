@@ -15,6 +15,9 @@ h6 {
 
 body nav {
   background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 body nav ul {
   display: flex;
