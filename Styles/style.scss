@@ -14,6 +14,7 @@ h6 {
 }
 
 body {
+  overflow-x: hidden;
   nav {
     background-color: white;
     position: sticky;
@@ -77,6 +78,7 @@ body {
         }
       }
     }
+
     section.about-me {
       background-color: rgb(230, 192, 253);
       padding: 5rem 0rem;
@@ -96,13 +98,14 @@ body {
         }
       }
     }
+
     section.resume {
       display: flex;
       flex-wrap: wrap;
       padding: 2rem;
 
       section.table {
-        flex: 5 1 500px;
+        flex: 5 0 500px;
         padding: 2rem;
         table {
           --bs-table-bg: none;
@@ -139,7 +142,6 @@ body {
           left: 80px;
           z-index: -1;
         }
-
         div.greenRect2 {
           width: 50vw;
           height: 40vh;
@@ -158,6 +160,39 @@ body {
           left: -100px;
           z-index: -1;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    main {
+      section.about-me {
+        section.description {
+          width: 80%;
+        }
+      }
+      section.resume {
+        overflow-x: auto;
+        section.picture {
+          div.greenRect1,
+          div.greenRect2,
+          div.greenRect3 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    nav {
+      position: static;
+      ul {
+        flex-direction: column;
       }
     }
   }

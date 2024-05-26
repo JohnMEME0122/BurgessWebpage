@@ -13,6 +13,9 @@ h6 {
   font-weight: normal;
 }
 
+body {
+  overflow-x: hidden;
+}
 body nav {
   background-color: white;
   position: sticky;
@@ -94,7 +97,7 @@ body main section.resume {
   padding: 2rem;
 }
 body main section.resume section.table {
-  flex: 5 1 500px;
+  flex: 5 0 500px;
   padding: 2rem;
 }
 body main section.resume section.table table {
@@ -147,4 +150,26 @@ body main section.resume section.picture div.greenRect3 {
   top: 0px;
   left: -100px;
   z-index: -1;
+}
+
+@media screen and (max-width: 800px) {
+  body main section.about-me section.description {
+    width: 80%;
+  }
+  body main section.resume {
+    overflow-x: auto;
+  }
+  body main section.resume section.picture div.greenRect1,
+  body main section.resume section.picture div.greenRect2,
+  body main section.resume section.picture div.greenRect3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  body nav {
+    position: static;
+  }
+  body nav ul {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
