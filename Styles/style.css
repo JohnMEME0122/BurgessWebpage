@@ -159,6 +159,10 @@ body main section.resume section.picture div.greenRect3 {
   body main section.resume {
     overflow-x: auto;
   }
+  body main section.resume section.picture img {
+    height: auto;
+    max-width: 100%;
+  }
   body main section.resume section.picture div.greenRect1,
   body main section.resume section.picture div.greenRect2,
   body main section.resume section.picture div.greenRect3 {

@@ -176,6 +176,10 @@ body {
       section.resume {
         overflow-x: auto;
         section.picture {
+          img {
+            height: auto;
+            max-width: 100%;
+          }
           div.greenRect1,
           div.greenRect2,
           div.greenRect3 {
